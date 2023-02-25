@@ -16,3 +16,9 @@
 .smod-page .sapMPageEnableScrolling {
   overflow: hidden !important;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+.smod-code-area .sapMInputBaseInner {
+  font-family: "Fira Code", monospace !important;
+}

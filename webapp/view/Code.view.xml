@@ -6,7 +6,7 @@
     <Page id="page" title="{i18n>title}" class="smod-page">
         <content>
             <l:Splitter height="100vh">
-                <TextArea value="{codeViewModel>/codeContent}" rows="40" width="100%" valueLiveUpdate="true">
+                <TextArea value="{codeViewModel>/codeContent}" rows="40" width="100%" valueLiveUpdate="true" class="smod-code-area">
                     <layoutData>
                         <l:SplitterLayoutData size="50%" />
                     </layoutData>
