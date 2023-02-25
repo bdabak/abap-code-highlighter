@@ -1,0 +1,28 @@
+<mvc:View controllerName="com.smod.highlightjs.highlightcode.controller.Code"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:c="com.smod.highlightjs.highlightcode.ui">
+    <Page id="page" title="{i18n>title}" class="smod-page">
+        <content>
+            <l:Splitter height="100vh">
+                <TextArea value="{codeViewModel>/codeContent}" rows="40" width="100%" valueLiveUpdate="true">
+                    <layoutData>
+                        <l:SplitterLayoutData size="50%" />
+                    </layoutData>
+                </TextArea>
+
+                <!-- <TextArea value="{codeViewModel>/codeContent}" rows="40" width="100%" editable="false">
+                    <layoutData>
+                        <l:SplitterLayoutData size="auto" />
+                    </layoutData>
+                </TextArea> -->
+                <c:HighlightCode code="{codeViewModel>/codeContent}" lang="abap">
+                    <c:layoutData>
+                        <l:SplitterLayoutData size="auto" />
+                    </c:layoutData>
+                </c:HighlightCode>
+            </l:Splitter>
+        </content>
+    </Page>
+</mvc:View>

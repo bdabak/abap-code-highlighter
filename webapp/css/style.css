@@ -1,0 +1,18 @@
+/* Enter your custom styles here */
+.smod-highlightcode-container {
+  overflow: hidden;
+}
+.smod-highlightcode-main {
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+}
+
+.smod-highlightcode-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.smod-page .sapMPageEnableScrolling {
+  overflow: hidden !important;
+}
